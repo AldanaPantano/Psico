@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 0.2cm
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 2cm;
+
+}
+
+.menu a {
+    text-decoration: none;
+    font-style: italic;
+    color: darkred;
+}
+
+
+.tittle {
+    /* titulo Lic. Cristian Vallarino */
+    color: rgb(131, 127, 127);
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.subtittle {
+    color: rgb(131, 127, 127);
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.1cm;
+    margin-left: 12%;
+    margin-inline: 12%;
+}
+
+.MN {
+    font-size: small;
+    display: flex;
+    justify-content: flex-start;
+    margin-inline: 13%;
+    color: rgb(131, 127, 127)
+}
+
+
+
+.button {
+    text-decoration: none;
+    color: rgb(85, 82, 82);
+    font-size: 0.5cm;
+    text-transform: uppercase;
+    padding: 0.2cm;
+    margin: 0.2cm;
+    margin-left: 9.5%;
+    width: 12%;
+}
+
+.button:hover {
+    border: 2px solid rgba(199, 35, 35, 0.671);
+}
+
+.banner {
+    background-color: rgb(208, 238, 160);
+    width: 100%;
+    height: 50vh;
+    padding: 5%;
+    display: flex;
+}
+
+
+.perfil {
+    /* foto de perfil */
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 10% 20% 40%
+}
+
+
+.frase {
+    color: rgb(105, 107, 103);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+p {
+    color: rgb(15, 26, 46);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+
+.turnos {
+    text-align: center;
+    background-color: grey;
+    margin: 10%;
+    padding: 10%;
+}
+
+
+
+
+.hijo {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(208, 238, 160);
+    padding: 2cm;
+    margin: 2cm;
+    display: flex;
+    justify-content: space-around;
+}
+
+.padre {
+    display: grid;
+
+    padding: 1rem;
+
+    grid-gap: 1rem;
+
+    grid-template-columns: repeat(4, 350px);
+
+    grid-template-rows: 350px 350px;
+
+    font-size: 5rem;
+}
+
+.hijo {
+    background-color: rgb(208, 238, 160);
+
+    color: black;
+
+    padding: 1rem;
+
+    font-size: 30%;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        background-color: black;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .padre {
+        background-color: beige;
+        grid-template-columns: repeat(1, 4fr);
+        grid-template-rows: repeat(4, 4fr);
+    }
+
+    .banner {
+        background-color: beige;
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat (1, 2fr);
+    }
+
+}
